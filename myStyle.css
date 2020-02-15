@@ -1,0 +1,190 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+
+.myJumbo {
+  background-color: #333333;
+  height: 75px;
+}
+
+body {
+  margin:0;
+  text-align:center;
+}
+
+h1.header {
+  color: rgb(102, 102, 255);
+  margin:0;
+  font-family: 'Bree Serif', serif;
+  padding: 25px 0px;
+}
+
+.verticalJumbo{
+  width:50px;
+  align: left;
+  color: blue;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.openbtn {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Bree Serif', serif;
+  background-color: #333333;
+  color:white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+}
+
+.openbtn:hover {
+  background-color: white; /* Green */
+  color:#333333;
+}
+
+
+h2 {
+  font-family: 'Bree Serif', serif;
+}
+
+.toLeft{
+  margin: 0px 10px 0px 0px;
+}
+
+#centerTable{
+ margin: 0px auto;
+}
+
+.key {
+  padding: 10px;
+  float:right;
+
+}
+
+#forTable{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  opacity: 0;
+  transition: 1s;
+}
+
+/* #<div style="display:flex;justify-content:center;align-items:center;">
+  <div></div>
+</div>
+*/
+#myTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+#myTable td, #myTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#myTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#myTable tr:hover {background-color: rgb(169,169,169);}
+
+#myTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #333333;
+  color: white;
+}
+
+.forRemove {
+  margin: 0px 10px 10px 10px;
+  padding:20px 0px 0px 0px;
+  font-size:20px;
+}
+
+#forRemove:hover {
+  color: red;
+}
+
+.contain-table {
+  width: 40%;
+}
+
+
+.afterTable {
+  margin-top:10px;
+}
+
+#loading {
+  display:none;
+  opacity: .5;
+  transition: .3s;
+}
+
+#swing-sword {
+  border-radius: 10px;
+}
+
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}

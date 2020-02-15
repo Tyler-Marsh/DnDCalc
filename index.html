@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<link href="myStyle.css" rel="stylesheet">
+
+<body>
+  <div class="myJumbo">
+    <h1 class="header">5e chance calculator</h1>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Create a character</a>
+    <a href="#">Contact me?</a>
+  </div>
+  
+  <!--  
+  <button onclick="openNav()" class="openbtn">Create a character</button>  -->
+  
+  
+  
+  <h2>Combat to hit chances</h2>
+ 
+
+ <form id="combatChances">
+    <table id="centerTable">
+      <tr>
+      <td class="key">Your Characer's level is in range:</td>
+      <td>
+           <!-- inputs  for the form-->
+                <select id = "profBonus">
+                  <option value = "2">1-4</option>
+                  <option value = "3">5-8</option>
+                  <option value = "4">9-12</option>
+                  <option value = "5">13-16</option>
+                  <option value = "6">17-20</option>
+                </select>
+      </td>
+    </tr>
+
+      <tr>
+        <td class="key" style="border-color:red;">Attacking ability score:</td>
+        <td>
+          <input type="number" id="attribute">
+            
+
+          </select>
+        </td>
+        </tr>
+        <tr>
+          <td class="key">Net total of other bonuses/penalties to attack:</td>
+          <td><input type="number" id="otherBonus"></td>
+        </tr>
+        <tr>
+          <td class="key">Combat circumstances:</td>
+          <td>
+          <input type="radio" id="REG" name="num_die" checked="checked"> <label for="regular" name="num_die">Regular</label>
+          <input type="radio" id="DIS" name="num_die"> <label for="disadvantage" name="num_die">Disadvantage</label>
+          <input type="radio" id="ADV" name="num_die"> <label for="advantage" name="num_die">Advantage</label>
+          <input type="radio" id="EA" name="num_die"> <label for="elvenAccuracy" name="num_die">Elven Accuracy</label>
+
+        </td>
+        </tr>
+    
+     <tr>
+       <td class="key">Target's Minimum suspected AC:</td>
+       <td><input type="number" id="targetAC"></td>
+     </tr>
+  
+ 
+  </table>
+  </form>
+
+  <button class="openbtn" id="calc" onclick="calcChances()">Calculate</button>
+</div>
+<!-- space for the loading gif-->
+
+<div id="loading">
+  <img src="img/swing-sword-giphy.gif" alt="" id="swing-sword" class="responsive">
+</div>
+<!-- space for the table-->
+<div id="forTable">
+
+</div>
+<!-- padding after the table-->
+<div class="afterTable">
+
+</div>
+  <script src="big.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
